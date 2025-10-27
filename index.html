@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Power BI - GitHub Pages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .dashboard-section {
+            padding: 2rem;
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 75%; /* 4:3 ratio */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .info-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .info-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📊 Dashboard Power BI</h1>
+            <p>Visualización de datos en tiempo real - Publicado con GitHub Pages</p>
+        </header>
+
+        <main class="dashboard-section">
+            <div class="iframe-container">
+                <iframe 
+                    title="dashboard EtmlverExcel" 
+                    src="https://app.powerbi.com/reportEmbed?reportId=c90cf3cc-ce9f-4120-9f27-e57169e5b8ca&autoAuth=true&ctid=4fc807c2-70bc-4eb1-a86e-cc52f0887cbc" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="info-section">
+                <h2>Características del Dashboard</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>🚀 Actualización en Tiempo Real</h3>
+                        <p>Datos que se actualizan automáticamente</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📈 Métricas Clave</h3>
+                        <p>KPIs y análisis importantes</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🌐 Acceso Global</h3>
+                        <p>Disponible desde cualquier dispositivo</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Publicado con GitHub Pages | &copy; 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
